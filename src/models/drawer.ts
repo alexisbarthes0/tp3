@@ -77,7 +77,6 @@ export class Drawer {
         );
         this.context.strokeStyle = oldStyle;
     }
-
     /**
      * méthode privée pour dessiner un rectangle
      * @param {Triangle} t le rectangle à dessiner
