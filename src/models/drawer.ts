@@ -2,7 +2,7 @@ import { Cercle } from "./cercle";
 import { FormeGeometrique } from "./forme-géométrique";
 import { Rectangle } from "./rectangle";
 import { Triangle } from "./triangle";
-
+import { Carre } from "./carre";
 /**
     La classe Drawer (dessinatrice) est capable d'interagir 
     avec un contexte de rendu 2D d'un element HTML `canvas`,
@@ -124,12 +124,14 @@ export class Drawer {
             case Triangle:
                 this.drawTriangle(shape as Triangle);
                 break;
+            case Carre:
             case Rectangle:
                 this.drawRectangle(shape as Rectangle);
                 break;
             case Cercle:
                 this.drawCircle(shape as Cercle);
                 break;
+
             // A COMPLETER POUR LE CARRE
             default:
                 break;
